@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:rgba(139, 209, 255, 0.884);
+}
+.container{
+    max-width:1140px;
+    margin: 50px auto;
+  /*   background: lightskyblue; */
+
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "header header header header header"
+                        "friend1 friend2 friend3 friend4 friend5"
+                        "footer footer footer footer footer";
+   
+    grid-template-rows: 100px 300px 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    padding: 10px;
+  
+    grid-gap: 1em;
+   
+}
+
+.header{
+    grid-area:header;
+    /* background: tan; */
+
+ 
+    
+}
+.friend1{
+    grid-area:friend1; 
+    background: seashell;
+    
+}
+.friend2{
+    grid-area:friend2;
+    background: seashell;
+}
+.friend3{
+    grid-area:friend3;
+    background: seashell;
+}
+.friend4{
+    grid-area:friend4;
+    background: seashell;
+}
+.friend5{
+    grid-area:friend5;
+    background: seashell;  
+}
+
+.footer{
+    grid-area:footer;
+    /* justify-self: center;
+    align-self: center; */
+   /*  background: rgb(225, 250, 3); */
+   
+}
+
+.grid{
+
+  
+  
+    padding: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width:480px){
+    .grid-container{
+
+        grid-template-areas: "header "
+                        "friend1"
+                         "friend2" 
+                         "friend3"
+                         "friend4"
+                         "friend5"
+                        "footer ";
+        
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 300px 300px 300px  300px  300px  80px;   
+        padding: 10px;                 
+    }
+
+}
+
+
+
+
+
