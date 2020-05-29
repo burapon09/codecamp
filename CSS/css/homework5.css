@@ -7,10 +7,12 @@ body{
 }
 
 
-/* .header{
-    display: flex;
-    border: solid 1px black;
-} */
+.header{
+    /* display: flex; */
+    /* border: solid 1px black; */
+  
+    
+} 
 
 /* Style the top navigation bar */
 .navbar {
@@ -58,7 +60,8 @@ body{
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 80px;
       grid-template-rows: 700px 600px 700px 700px 600px;
-      padding: 40px;
+     padding-left: 20px;
+     padding-right: 20px;
 
   }
 
@@ -135,4 +138,19 @@ body{
   border: solid 2px blue;
 } */
     
+.nav-2{
+  text-align: center;
+  padding-top: 20px;
+  
+}
+.nav-2 li{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+a{
+  text-decoration: none;
+}
   
