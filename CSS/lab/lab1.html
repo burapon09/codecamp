@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+
+            margin: 50px auto;
+            grid-gap: 20px;
+            
+        
+        }
+        div > div{
+            border: solid 1px black;
+            padding: 5%;
+           
+         
+        }
+        div{
+            text-align: center;
+        }
+        div>h3{
+            border: solid 1px black;
+        }
+        .footer{
+            width: 80%;
+            margin: 0 auto;
+            border: solid 1px black;
+        
+        }
+        @media only screen and (min-width: 841px){
+            .container{
+                grid-template-columns: repeat(3,auto);
+                grid-gap: 3%;
+            }
+            div>div{
+                min-width: 255px;
+            }
+        }
+        @media only screen and (max-width: 560px){
+            .container{
+                grid-template-columns: auto;
+                grid-template-rows: repeat(6,300px);
+                grid-gap: 3%;
+            }
+            div>div{
+                min-width: 300px;
+            }
+            .footer{
+                min-width: 300px;
+             
+            }
+        }
+        @media only screen and (min-width: 561px) and (max-width: 840px){
+            .container{
+                grid-template-columns: auto auto;
+                grid-gap: 3%;
+            }
+             div>div{
+                min-width: 350px;
+            }
+            .footer{
+                min-width: 350px;
+            } 
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div><img src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZYANuEZlRY89MbBZGbB03TL7pGDPeb11CkdQJhamTfLVYfEGR0DP.jpg" alt="" style="width: 500px; height: auto;"></div>
+
+    <div class="container">
+
+        <div>
+            <h3>head</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+        </div>
+        <div>
+            <h3>head</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+        </div>
+        <div>
+            <h3>head</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+        </div>
+        <div>
+            <h3>head</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+        </div>
+        <div>
+            <h3>head</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+        </div>
+        <div>
+            <h3>head</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+        </div>
+
+       
+        
+
+    </div>
+    <div class="footer">
+       
+            <h1>footer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis fuga modi assumenda laboriosam
+                minima sit. Dolor natus ratione est nulla quibusdam laudantium laboriosam, aliquam eveniet voluptas ex
+                voluptatem. Dolorem.</p>
+      
+    </div>
+
+</body>
+
+</html>
