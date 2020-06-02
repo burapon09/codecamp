@@ -7,6 +7,7 @@
     <title>Document</title>
     <style>
         .items-1 {
+            text-align: center;
             margin: 0 auto;
             width: 100px;
             height: 100px;
@@ -15,36 +16,86 @@
             animation-name: ani-items1;
             animation-duration: 10s;
 
-            
-            }
-            @keyframes ani-items1 {
-                from{
-                    background-color:black;
-                  
-                    border: solid 10px rgb(255, 0, 0);
-                    right: 0px;
-                    top:0px;
 
-                
-                }
-                to{
-                    background-color:skyblue;
-                   
-                    border: solid 10px blue;
-                    right: 200px;
-                    top:0px;
+        }
 
-                }
+        @keyframes ani-items1 {
+            from {
+                background-color: black;
+
+                border: solid 10px rgb(255, 0, 0);
+                right: -400px;
+                top: 0px;
+
+
             }
-        
+
+            to {
+                background-color: skyblue;
+
+                border: solid 10px blue;
+                right: 0px;
+                top: 0px;
+
+            }
+        }
+
+        .items-2 {
+            text-align: center;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: blue;
+            animation-name: ani-items2;
+            animation-duration: 10s;
+
+        }
+
+        @keyframes ani-items2 {
+            0% {
+                background-color: skyblue;
+
+                border: solid 10px blue;
+                right: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(218, 9, 9);
+
+                border: solid 10px rgb(245, 241, 4);
+                right: -400px;
+                top: 0px;
+            }
+
+            75% {
+                background-color: rgb(255, 255, 255);
+
+                border: solid 10px rgb(20, 4, 245);
+                right: 400px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: rgb(50, 248, 0);
+
+                border: solid 10px rgb(221, 151, 0);
+                right: 0px;
+                top: 0px;
+
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="items-1">
-
-
-
+        <h1>Hello</h1>
+    </div>
+    <br><br>
+    <div class="items-2">
+        <h1>Hello</h1>
     </div>
 
 </body>
