@@ -13,7 +13,7 @@
         }
 
         .img-style {
-            width: 100%;
+           width: 100%;
 
 
 
@@ -40,10 +40,10 @@
             grid-column: 1/3;
         }
 
-       /*  .grid-border {
-             border: solid 1px black;
-        }
- */
+        /* .grid-border {
+            border: solid 1px black;
+        } */
+
         .container {
             text-align: center;
 
@@ -90,6 +90,7 @@
             height: 50px;
             width: 100px;
             margin-top: 80px;
+            margin-bottom: 50px;
         }
 
         .container2 {
@@ -109,13 +110,13 @@
 
         }
 
-        /* .grid-items2 {
-            border: solid 1px black;
+        .grid-items2 {
+            /* border: solid 1px black; */
 
         }
- */
+
         .grid-item2-bg {
-            background-image: url(https://www.pimclick.com/wp-content/uploads/2018/11/mobile.png);
+            background-image: url(/CSS/img/phonepimclick.jpg);
 
 
             background-position: right bottom !important;
@@ -126,134 +127,179 @@
 
 
         }
+
+        @media only screen and (max-width: 600px) {
+            .grid-container1 {
+                grid-template-columns: auto;
+                /*  grid-template-rows: repeat(4, auto); */
+
+
+            }
+
+            .grid-container1 .grid1-3 {
+                grid-column: 1/2;
+            }
+
+            .grid-container1 .grid1-4 {
+                grid-column: 1/2;
+            }
+
+            .container1 {
+
+                height: auto;
+                width: auto;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .grid-container2 {
+                grid-template-columns: auto;
+                /*  grid-template-rows: repeat(4, auto); */
+
+
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <img src="https://www.pimclick.com/wp-content/uploads/2018/11/contact-banner.jpg" alt="" class="img-style">
+    <img src="/CSS/img/contact-banner.jpg" alt="" class="img-style">
 
 
-
-    <div class="container1">
-        <h1>Contact us today</h1>
-        <div class="grid-container1 ">
-            <div class="grid1-1 grid-border">
-                Your Name (required) <br>
-                <input type="text">
+    <div class="container">
+        <div class="container1">
+            <h1>Contact us today</h1>
+            <div class="grid-container1 ">
+                <div class="grid1-1 grid-border">
+                    Your Name (required) <br>
+                    <input type="text">
+                </div>
+                <div class="grid1-2 grid-border">
+                    Your Email (required) <br>
+                    <input type="text">
+                </div>
+                <div class="grid1-3 grid-border">
+                    Subject <br>
+                    <input type="text">
+                </div>
+                <div class="grid1-4 grid-border">
+                    Your Message <br>
+                    <textarea rows="4" name="comment" form="usrform"></textarea>
+                </div>
             </div>
-            <div class="grid1-2 grid-border">
-                Your Email (required) <br>
-                <input type="text">
-            </div>
-            <div class="grid1-3 grid-border">
-                Subject <br>
-                <input type="text">
-            </div>
-            <div class="grid1-4 grid-border">
-                Your Message <br>
-                <textarea rows="4" name="comment" form="usrform"></textarea>
-            </div>
+            <button class="button-box1">Send</button>
         </div>
-        <button class="button-box1">Send</button>
     </div>
+    <div class="container">
+        <div class="container2">
+            <p>Pimclick is a full service web design and online marketing agency offering a unique blend of creativity
+                and
+                expertise within the entirety of the digital spectrum. With headquarters located in Paris, France and
+                branch
+                offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.</p>
 
-    <div class="container2">
-        <p>Pimclick is a full service web design and online marketing agency offering a unique blend of creativity and
-            expertise within the entirety of the digital spectrum. With headquarters located in Paris, France and branch
-            offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.</p>
+        </div>
+        <div class="container2">
+            <iframe width="900" height="425" src="https://www.youtube.com/embed/r0q6a_9fg_Y" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-    </div>
-    <div class="container2">
-        <iframe width="900" height="425" src="https://www.youtube.com/embed/r0q6a_9fg_Y" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    </div>
-
-    <div class="container2">
-        <div class="grid-container2">
-            <div class="grid-items2">
-                <h1
-                    style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
-                    Digital
-                    <br> Strategy</h1>
-                <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">Business Intelligence
-                    <br>
-                    SEO – Search Engine Optimization <br>
-                    SEM streategy <br>
-                    Digital Content <br>
-                    Branding Design <br>
-                    UX & UI Design <br>
-                    Product Prototype <br>
-                </p>
-            </div>
-            <div class="grid-items2">
-                <h1
-                    style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
-                    Digital
-                    <br> Production</h1>
-                <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">WebSites & Microsites
-                    <br>
-                    Responsive Design / Development<br>
-                    Mobile APP & Games<br>
-                    Intranet & Extranet<br>
-                    Virtual & Augmented Reality<br>
-                    Interactive Installations</p>
-            </div>
-            <div class="grid-items2">
-                <h1
-                    style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
-                    E-Marketing</h1>
-                <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">BCampaigns management
-                    <br>
-                    Market research<br>
-                    User analysis<br>
-                    Brand activation<br>
-                    E-Commerce Development<br>
-                    Social Media strategy and<br>
-                    optimisation<br>
-                    Advocacy & Influencer</p>
-            </div>
-            <div class="grid-items2">
-                <h1
-                    style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
-                    Graphic Design</h1>
-                <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">
-                    Creative Art direction <br>
-                    Branding & Identity<br>
-                    3D modeling / Animation<br>
-                    UI/UX design<br>
-                    Prints & Signaletics<br>
-                    Visual storytelling<br>
-                    Layouting & Infographics<br>
-                    Typography</p>
-            </div>
-            <div class="grid-items2">
-                <h1
-                    style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
-                    Video
-                    <br> Production</h1>
-                <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">
-                    Campaigns management <br>
-                    Scripting / Story Boarding<br>
-                    Filming<br>
-                    Editing/Grading<br>
-                    Motion Design<br>
-                    Sound design </p>
-            </div>
-            <div class="grid-items2 grid-item2-bg">
+        <div class="container2">
+            <div class="grid-container2">
+                <div class="grid2-1 grid-items2">
+                    <h1
+                        style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
+                        Digital
+                        <br> Strategy</h1>
+                    <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">Business Intelligence
+                        <br>
+                        SEO – Search Engine Optimization <br>
+                        SEM streategy <br>
+                        Digital Content <br>
+                        Branding Design <br>
+                        UX & UI Design <br>
+                        Product Prototype <br>
+                    </p>
+                </div>
+                <div class="grid2-2 grid-items2">
+                    <h1
+                        style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
+                        Digital
+                        <br> Production</h1>
+                    <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">WebSites & Microsites
+                        <br>
+                        Responsive Design / Development<br>
+                        Mobile APP & Games<br>
+                        Intranet & Extranet<br>
+                        Virtual & Augmented Reality<br>
+                        Interactive Installations</p>
+                </div>
+                <div class="grid2-3 grid-items2">
+                    <h1
+                        style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
+                        E-Marketing</h1>
+                    <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">BCampaigns management
+                        <br>
+                        Market research<br>
+                        User analysis<br>
+                        Brand activation<br>
+                        E-Commerce Development<br>
+                        Social Media strategy and<br>
+                        optimisation<br>
+                        Advocacy & Influencer</p>
+                </div>
+                <div class="grid2-4 grid-items2">
+                    <h1
+                        style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
+                        Graphic Design</h1>
+                    <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">
+                        Creative Art direction <br>
+                        Branding & Identity<br>
+                        3D modeling / Animation<br>
+                        UI/UX design<br>
+                        Prints & Signaletics<br>
+                        Visual storytelling<br>
+                        Layouting & Infographics<br>
+                        Typography</p>
+                </div>
+                <div class="grid2-5 grid-items2">
+                    <h1
+                        style="font-family: Montserrat, sans-serif; font-size: 48px; line-height: 1.3em; font-weight: 700; color: rgb(233, 17, 38); margin: 40px 0px; text-transform: none; text-align: left;">
+                        Video
+                        <br> Production</h1>
+                    <p style="text-align: left; font-family: 'SFPro'; font-size: 18px !important;">
+                        Campaigns management <br>
+                        Scripting / Story Boarding<br>
+                        Filming<br>
+                        Editing/Grading<br>
+                        Motion Design<br>
+                        Sound design </p>
+                </div>
+                <div class="grid2-6 grid-items2 grid-item2-bg">
+                </div>
             </div>
         </div>
     </div>
     <div class="container2">
         <p>
             Our Clients <br>
-            
+
             We partner up with forward thinking clients, <br>
             being an extension of it’s marketing area.</p>
-        <img style="width: 800px;" src="https://www.pimclick.com/wp-content/uploads/2018/11/pimclick-logo-clients.jpg" alt="">
-           
+        <img class="img-style"  src="/CSS/img/pimclick-logo-clients.jpg" alt="">
+
     </div>
-    <img class="img-style" src="https://www.pimclick.com/wp-content/uploads/2018/11/pimclick-contact-bottom2.jpg" alt="">
+    <img class="img-style" src="/CSS/img/pimclick-contact-bottom2.jpg" alt="">
 
 </body>
 
