@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .items1 {
+
+        margin: 0 auto;
+
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;
+        animation: items1 alternate linear 5s 2s infinite;
+
+
+    }
+
+    @keyframes items1 {
+        0% {
+            background-color: rgb(221, 18, 228);
+
+        }
+
+        25% {
+            background-color: rgb(218, 9, 9);
+        }
+
+        50% {
+            background-color: blue;
+        }
+
+        75% {
+            background-color: rgb(14, 255, 86);
+        }
+
+        100% {
+            background-color: rgb(255, 251, 2);
+        }
+    }
+
+    .items2 {
+
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;
+        animation: items2 alternate linear 8s 2s infinite;
+    }
+
+    @keyframes items2 {
+        0% {
+            opacity: 1;
+
+
+
+        }
+
+        25% {
+            opacity: 0;
+            background-color: rgb(14, 255, 86);
+        }
+
+        50% {
+            opacity: 1;
+            background-color: blue;
+        }
+
+        75% {
+            opacity: 0;
+            background-color: rgb(255, 14, 14);
+        }
+
+        100% {
+            opacity: 1;
+            background-color: rgb(221, 18, 228);
+        }
+    }
+
+    .items3 {
+
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: cornflowerblue;
+        animation: items3  linear 4s 2s infinite;
+    }
+
+    @keyframes items3 {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+
+        20% {
+            left: 400px;
+            top: 0px;
+        }
+
+        40% {
+            left: 400px;
+            top: 400px;
+        }
+
+        60% {
+            left: -400px;
+            top: 400px;
+        }
+
+        80% {
+            left: -400px;
+            top: 0px;
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="items1"></div>
+    <div class="items2"></div>
+    <div class="items3"></div>
+
+</body>
+
+</html>
