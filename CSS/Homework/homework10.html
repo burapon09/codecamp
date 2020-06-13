@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+        }
+
+        .width-img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .container1 {
+            max-width: 900px;
+
+            background-color: white;
+            margin-top: -230px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+
+
+
+
+        }
+
+        .div1 {
+            width: auto;
+            height: auto;
+            padding: 20px;
+            /* border: solid 1px black; */
+            margin-left: auto;
+            margin-right: auto;
+
+
+
+
+        }
+
+        input[type=text] {
+            width: 100%;
+        }
+
+        .row {
+            justify-content: center;
+
+
+        }
+
+        div>div>div>div {
+            /* border: solid 1px black; */
+            text-align: left;
+            margin-bottom: 20px;
+
+        }
+
+        textarea {
+
+            width: 100%;
+
+
+        }
+
+        .button {
+          
+            background-color: orangered;
+
+            border: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+
+            border-radius: 5px;
+            font-size: 20px;
+            /*  margin: 4px 2px; */
+            cursor: pointer;
+            height: 50px;
+            width: 100px;
+         
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img class="width-img" src="/CSS/img/contact-banner.jpg" alt="">
+    <div class="container">
+        <div class="container1">
+            <div class="div1">
+
+                <h1>Contact ustoday</h1><br><br>
+                <div class="row">
+                    <div class="col-10 col-sm-5 col-lg-5">
+                        Your Name (required)
+                        <input type="text">
+                    </div>
+                    <div class="col-10 col-sm-5 col-lg-5">
+                        Your Email (required)
+                        <input type="text">
+                    </div>
+                    <div class="col-10 col-sm-10 col-lg-10">
+                        Subject
+                        <input type="text">
+                    </div>
+                    <div class="col-10 col-sm-10 col-lg-10">
+                        Your Message
+                        <textarea rows="4" name="comment" form="usrform"></textarea>
+                    </div>
+                </div>
+                <div  style="text-align: center;">
+                    <button class="button">SEND</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
