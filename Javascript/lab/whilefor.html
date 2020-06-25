@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<!-- <script>
+    let i =3;
+    while (i){
+        alert (i--);
+    }
+    alert('สุดท้ายคือ 1');
+</script> -->
+<script>
+    let i = 0;
+    //while (++i<5) alert(i);
+    //while (i++<5) alert(i);
+    //for (let i = 0; i < 5; i++) alert(i);
+    //for (let i = 0; i < 5; ++i) alert( i );
+    //for(let i =2;i<=10;i++) alert(i) ;
+    // while(i<3){
+    //     alert(`number ${i}!`);
+    //     i++
+    // }
+
+    let inputNumber
+
+    while (true) {
+        inputNumber = prompt('ใส่ตัวเลข')
+        if (inputNumber == '' || inputNumber == undefined) {
+            alert('ใส่ตัวเลข');
+        } else if (inputNumber < 50) {
+            alert(`มากกว่า ${inputNumber}!!`);
+
+        } else if (inputNumber > 50) {
+            alert(`น้อยกว่า ${inputNumber}!!`);
+
+        } else if (inputNumber == 50) {
+            alert('ถูก 50');
+            break;
+        } else {
+            alert('error');
+        }
+    }
+
+</script>
+
+
+</html>
