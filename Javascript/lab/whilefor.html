@@ -30,8 +30,13 @@
     // }
 
     let inputNumber
-
+ 
     while (true) {
+        if (i === 4)
+        {  
+            alert(" ครั้งที่ 4 เกม over");
+            break;
+        }
         inputNumber = prompt('ใส่ตัวเลข')
         if (inputNumber == '' || inputNumber == undefined) {
             alert('ใส่ตัวเลข');
@@ -47,6 +52,7 @@
         } else {
             alert('error');
         }
+        i++
     }
 
 </script>
